@@ -2,31 +2,31 @@ import { createContext, useContext } from "react";
 
 // Context with default values
 export const AppContext = createContext({
-    darkMode: false,
-    toggleTheme: ()=>{},
-    isSmallScreen: false,
+  darkMode: false,
+  toggleTheme: () => {},
+  isSmallScreen: false,
 
-    navVisibility: false,
-    changeNavVisibility: ()=>{},
+  navVisibility: false,
+  changeNavVisibility: () => {},
 
-    articlesResponse: {},
-    articlesArray:[],
-    setArticlesResponse: ()=>{},
-    setArticlesArray: ()=>{},
-    
-    blogsResponse: {},
-    blogsArray: [],
-    setBlogsResponse: ()=>{},
-    setBlogsArray: ()=>{},
+  articlesResponse: {},
+  articlesArray: [],
+  setArticlesResponse: () => {},
+  setArticlesArray: () => {},
 
-    reportsResponse:{},
-    reportsArray: [],
-    setReportsResponse: ()=>{},
-    setReportsArray:()=>{}
-})
+  blogsResponse: {},
+  blogsArray: [],
+  setBlogsResponse: () => {},
+  setBlogsArray: () => {},
 
-export const AppContextProvider = AppContext.Provider
+  reportsResponse: {},
+  reportsArray: [],
+  setReportsResponse: () => {},
+  setReportsArray: () => {},
+});
 
-export default function useAppContext(){
-    return useContext(AppContext)
+export const AppContextProvider = AppContext.Provider;
+
+export default function useAppContext() {
+  return useContext(AppContext);
 }

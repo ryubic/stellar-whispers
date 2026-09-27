@@ -20,7 +20,8 @@ function Nav() {
                 to={index === 0 ? "/" : `/${item.toLowerCase()}`}
                 className={({ isActive }) =>
                   `h-full sm:w-auto text-right block items-center font-onest font-semibold text-2xl px-[1vw] ${
-                    isActive ?  "underline text-red-300" : "text-gray-300"}`
+                    isActive ? "underline text-red-300" : "text-gray-300"
+                  }`
                 }
               >
                 {item}
@@ -31,19 +32,29 @@ function Nav() {
         <li className="flex justify-end sm:items-center">
           <button
             onClick={() => {
-              toggleTheme(), changeNavVisibility();
+              (toggleTheme(), changeNavVisibility());
             }}
             className="p-1 rounded w-[45px]"
           >
             {darkMode ? (
               <>
-              <img className="max-w-[35px] rotate-45" src="/moon.svg" alt="" aria-hidden="true"/>
-              <span className="sr-only">switch to light mode</span>
+                <img
+                  className="max-w-[35px] rotate-45"
+                  src="/moon.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <span className="sr-only">switch to light mode</span>
               </>
             ) : (
               <>
-              <img className="max-w-[35px]" src="/sun.svg" alt="" aria-hidden="true"/>
-              <span className="sr-only">switch to dark mode</span>
+                <img
+                  className="max-w-[35px]"
+                  src="/sun.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <span className="sr-only">switch to dark mode</span>
               </>
             )}
           </button>

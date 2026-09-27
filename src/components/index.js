@@ -7,4 +7,4 @@ import Blogs from "./Blogs";
 import Reports from "./Reports";
 import Saved from "./Saved";
 
-export { Header, Nav, Footer, Articles, Blogs, Reports, Saved } 
+export { Header, Nav, Footer, Articles, Blogs, Reports, Saved };

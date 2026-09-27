@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 // import { api } from './src/backend'
 // https://vite.dev/config/
 export default defineConfig({
@@ -13,6 +13,6 @@ export default defineConfig({
     // },
     host: true, // Accept all incoming network requests
     port: 4001, // Optional: Explicitly specify the port
-  },  
+  },
   plugins: [react()],
-})
+});

@@ -46,8 +46,11 @@ function HorizontalCard({ element }) {
             href={`${element.url}`}
             className="self-end transition-all duration-500 focus:rotate-45"
           >
-            <img alt="read full article" src="/redirect.svg"
-            className="h-10 "/>
+            <img
+              alt="read full article"
+              src="/redirect.svg"
+              className="h-10 "
+            />
           </a>
         </div>
       </article>
